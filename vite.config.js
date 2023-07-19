@@ -8,6 +8,9 @@ export default defineConfig( ({mode})=>{
   return{
     base:"/lazy/",
   plugins: [react()],
+  build: {
+    chunkSizeWarningLimit:1600
+  },
   server:{
     port:env.VITE_PORT
   }
